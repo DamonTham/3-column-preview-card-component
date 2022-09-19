@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin: 20px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding: 55px;
+}
+
+.sedans img,
+.suvs img,
+.luxury img {
+  padding: 10px 0;
+}
+
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  padding: 20px 0;
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1rem;
+  line-height: 1.9;
+  padding: 10px 0;
+}
+
+.learnmore {
+  margin-top: 60px;
+  padding: 15px 30px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans .learnmore {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans .learnmore:hover {
+  cursor: pointer;
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+  transition: 0.2s ease-in-out;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .learnmore {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs .learnmore:hover {
+  cursor: pointer;
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+  transition: 0.2s ease-in-out;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury .learnmore {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury .learnmore:hover {
+  cursor: pointer;
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 345px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learnmore {
+    margin-top: 10px;
+  }
+
+  .luxury .learnmore:focus-visible {
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    transition: 0.2s ease-in-out;
+  }
+}
